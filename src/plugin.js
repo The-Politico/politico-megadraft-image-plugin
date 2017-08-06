@@ -6,8 +6,8 @@
 import React from 'react';
 import { MegadraftIcons } from 'megadraft';
 
-import Button from './Button.jsx';
-import Block from './Block.jsx';
+import Button from './Button';
+import Block from './Block';
 import constants from './constants';
 
 
