@@ -13,7 +13,7 @@ Include hidden inputs with your authorization token and the image service endpoi
 
 Include fontawesome and the plugin styles:
 
-```css
+```scss
 $fa-font-path: "../node_modules/font-awesome/fonts";
 @import "../node_modules/font-awesome/scss/font-awesome";
 @import "../src/styles/plugin.scss";
