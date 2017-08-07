@@ -6,5 +6,5 @@
 
 export default {
   PLUGIN_NAME: "politico megadraft image plugin",
-  PLUGIN_TYPE: "politico-megadraft-image-plugin"
+  PLUGIN_TYPE: "image"
 };
