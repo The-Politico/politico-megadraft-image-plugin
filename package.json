@@ -1,8 +1,8 @@
 {
   "name": "politico-megadraft-image-plugin",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "politico megadraft image plugin",
-  "main": "src/plugin.js",
+  "main": "lib/plugin.js",
   "dependencies": {
     "eslint-config-airbnb": "^15.1.0",
     "eslint-plugin-import": "^2.7.0",
