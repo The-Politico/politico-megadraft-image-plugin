@@ -10,6 +10,7 @@ import Button from './Button';
 import Block from './Block';
 import constants from './constants';
 import RightAlignIcon from './RightAlignIcon';
+import LeftAlignIcon from './LeftAlignIcon';
 
 
 export default {
@@ -20,7 +21,7 @@ export default {
   options: {
     defaultDisplay: 'wide',
     displayOptions: [
-      { key: 'inline-left', icon: MegadraftIcons.MediaSmallIcon, label: 'INLINE LEFT' },
+      { key: 'inline-left', icon: LeftAlignIcon, label: 'INLINE LEFT' },
       { key: 'inline-right', icon: RightAlignIcon, label: 'INLINE RIGHT' },
       { key: 'wide', icon: MegadraftIcons.MediaMediumIcon, label: 'WIDE' },
       { key: 'full', icon: MegadraftIcons.MediaBigIcon, label: 'FULL BLEED' },
