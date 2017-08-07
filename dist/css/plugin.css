@@ -6,12 +6,17 @@
 /*
  * YOUR STYLES HERE
  */
-.megadraft-editor figure .block__input {
+.megadraft-editor .image-figure img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.megadraft-editor .image-figure .block__input {
   width: calc(100% - 30px);
   padding: 8px 20px 8px 10px;
 }
 
-.modal-overlay {
+.image-modal.overlay {
   z-index: 2;
   position: fixed;
   top: 0;
@@ -22,32 +27,32 @@
   background-color: transparent;
 }
 
-.modal-overlay.after-open {
+.image-modal.overlay.after-open {
   background-color: rgba(0, 0, 0, 0.4);
 }
 
-.modal-overlay.before-close {
+.image-modal.overlay.before-close {
   background-color: transparent;
 }
 
-.modal-overlay .modal {
+.image-modal.upload {
   background: white;
   width: auto;
-  margin: -20% auto 20%;
+  margin: -50vh auto auto;
   padding: 20px;
   max-width: 300px;
   transition: all .2s;
 }
 
-.modal-overlay .modal.after-open {
-  margin-top: 20%;
+.image-modal.upload.after-open {
+  margin-top: 30vh;
 }
 
-.modal-overlay .modal.before-close {
-  margin-top: -20%;
+.image-modal.upload.before-close {
+  margin-top: -50vh;
 }
 
-.modal-overlay div.dropzone {
+.image-modal div.dropzone {
   border: 3px dashed grey;
   padding: 20px;
   background-color: white;
@@ -57,7 +62,7 @@
   cursor: pointer;
 }
 
-.modal-overlay div.dropzone .inner-block {
+.image-modal div.dropzone .inner-block {
   display: none;
   opacity: 0;
   transition: all .2s;
@@ -73,32 +78,32 @@
   color: white;
 }
 
-.modal-overlay div.dropzone .waiting {
+.image-modal div.dropzone .waiting {
   font-size: 36px;
 }
 
-.modal-overlay div.dropzone .waiting.show {
+.image-modal div.dropzone .waiting.show {
   display: block;
   opacity: 1;
   color: black;
 }
 
-.modal-overlay div.dropzone.reject {
+.image-modal div.dropzone.reject {
   border: 3px dashed #F44336;
   color: white;
 }
 
-.modal-overlay div.dropzone.reject .rejected {
+.image-modal div.dropzone.reject .rejected {
   color: #F44336;
   display: block;
   opacity: 1;
 }
 
-.modal-overlay div.dropzone.accept {
+.image-modal div.dropzone.accept {
   border: 3px dashed #4CAF50;
 }
 
-.modal-overlay div.dropzone.accept .supported {
+.image-modal div.dropzone.accept .supported {
   color: #4CAF50;
   display: block;
   opacity: 1;

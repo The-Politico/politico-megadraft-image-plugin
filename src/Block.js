@@ -14,7 +14,6 @@ const API = document.getElementsByName('image-api')[0].value;
 const TOKEN = document.getElementsByName('token')[0].value;
 const HEADERS = {
   Authorization: `Token ${TOKEN}`,
-  // 'Content-Type': 'multipart/form-data',
 };
 
 export default class Block extends Component {
@@ -63,24 +62,26 @@ export default class Block extends Component {
 
   render() {
     return (
-      <CommonBlock {...this.props} actions={this.actions}>
-        <BlockContent>
-          <img src={this.props.data.src} />
-        </BlockContent>
+      <div className="image-figure">
+        <CommonBlock {...this.props} actions={this.actions}>
+          <BlockContent>
+            <img src={this.props.data.src} />
+          </BlockContent>
 
-        <BlockData>
-          <BlockInput
-            placeholder="Caption"
-            value={this.props.data.caption}
-            onChange={this.handleCaptionChange}
-          />
-          <BlockInput
-            placeholder="Credit"
-            value={this.props.data.credit}
-            onChange={this.handleCreditChange}
-          />
-        </BlockData>
-      </CommonBlock>
+          <BlockData>
+            <BlockInput
+              placeholder="Caption"
+              value={this.props.data.caption}
+              onChange={this.handleCaptionChange}
+            />
+            <BlockInput
+              placeholder="Credit"
+              value={this.props.data.credit}
+              onChange={this.handleCreditChange}
+            />
+          </BlockData>
+        </CommonBlock>
+      </div>
     );
   }
 }

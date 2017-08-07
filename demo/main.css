@@ -2337,11 +2337,15 @@
 /*
  * YOUR STYLES HERE
  */
-.megadraft-editor figure .block__input {
+.megadraft-editor .image-figure img {
+  max-width: 100%;
+  max-height: 100%; }
+
+.megadraft-editor .image-figure .block__input {
   width: calc(100% - 30px);
   padding: 8px 20px 8px 10px; }
 
-.modal-overlay {
+.image-modal.overlay {
   z-index: 2;
   position: fixed;
   top: 0;
@@ -2350,62 +2354,64 @@
   height: 100%;
   transition: all .2s;
   background-color: transparent; }
-  .modal-overlay.after-open {
+  .image-modal.overlay.after-open {
     background-color: rgba(0, 0, 0, 0.4); }
-  .modal-overlay.before-close {
+  .image-modal.overlay.before-close {
     background-color: transparent; }
-  .modal-overlay .modal {
+
+.image-modal.upload {
+  background: white;
+  width: auto;
+  margin: -50vh auto auto;
+  padding: 20px;
+  max-width: 300px;
+  transition: all .2s; }
+  .image-modal.upload.after-open {
+    margin-top: 30vh; }
+  .image-modal.upload.before-close {
+    margin-top: -50vh; }
+
+.image-modal div.dropzone {
+  border: 3px dashed grey;
+  padding: 20px;
+  background-color: white;
+  font-family: Open Sans, arial, sans-serif;
+  color: grey;
+  position: relative;
+  cursor: pointer; }
+  .image-modal div.dropzone .inner-block {
+    display: none;
+    opacity: 0;
+    transition: all .2s;
+    position: absolute;
+    width: 100%;
+    height: 100%;
     background: white;
-    width: auto;
-    margin: -20% auto 20%;
-    padding: 20px;
-    max-width: 300px;
-    transition: all .2s; }
-    .modal-overlay .modal.after-open {
-      margin-top: 20%; }
-    .modal-overlay .modal.before-close {
-      margin-top: -20%; }
-  .modal-overlay div.dropzone {
-    border: 3px dashed grey;
-    padding: 20px;
-    background-color: white;
-    font-family: Open Sans, arial, sans-serif;
-    color: grey;
-    position: relative;
-    cursor: pointer; }
-    .modal-overlay div.dropzone .inner-block {
-      display: none;
-      opacity: 0;
-      transition: all .2s;
-      position: absolute;
-      width: 100%;
-      height: 100%;
-      background: white;
-      top: 0;
-      left: 0;
-      line-height: 105px;
-      text-align: center;
-      text-transform: uppercase;
-      color: white; }
-    .modal-overlay div.dropzone .waiting {
-      font-size: 36px; }
-      .modal-overlay div.dropzone .waiting.show {
-        display: block;
-        opacity: 1;
-        color: black; }
-    .modal-overlay div.dropzone.reject {
-      border: 3px dashed #F44336;
-      color: white; }
-      .modal-overlay div.dropzone.reject .rejected {
-        color: #F44336;
-        display: block;
-        opacity: 1; }
-    .modal-overlay div.dropzone.accept {
-      border: 3px dashed #4CAF50; }
-      .modal-overlay div.dropzone.accept .supported {
-        color: #4CAF50;
-        display: block;
-        opacity: 1; }
+    top: 0;
+    left: 0;
+    line-height: 105px;
+    text-align: center;
+    text-transform: uppercase;
+    color: white; }
+  .image-modal div.dropzone .waiting {
+    font-size: 36px; }
+    .image-modal div.dropzone .waiting.show {
+      display: block;
+      opacity: 1;
+      color: black; }
+  .image-modal div.dropzone.reject {
+    border: 3px dashed #F44336;
+    color: white; }
+    .image-modal div.dropzone.reject .rejected {
+      color: #F44336;
+      display: block;
+      opacity: 1; }
+  .image-modal div.dropzone.accept {
+    border: 3px dashed #4CAF50; }
+    .image-modal div.dropzone.accept .supported {
+      color: #4CAF50;
+      display: block;
+      opacity: 1; }
 
 body {
   margin: 0; }

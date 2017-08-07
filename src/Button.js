@@ -90,7 +90,7 @@ export default class Button extends Component {
           isOpen={this.state.modalOpen}
           onRequestClose={this.closeModal}
           className={{
-            base: 'modal upload',
+            base: 'image-modal upload',
             afterOpen: 'after-open',
             beforeClose: 'before-close',
           }}
@@ -98,7 +98,7 @@ export default class Button extends Component {
           rejectClassName="reject"
           acceptClassName="accept"
           overlayClassName={{
-            base: 'modal-overlay',
+            base: 'image-modal overlay',
             afterOpen: 'after-open',
             beforeClose: 'before-close',
           }}
