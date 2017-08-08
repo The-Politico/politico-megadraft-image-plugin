@@ -61,6 +61,7 @@ export default class Button extends Component {
         pk: json.pk,
         caption: '',
         credit: '',
+        display: 'wide',
       };
       props.onChange(insertDataBlock(props.editorState, data));
       this.setState({
